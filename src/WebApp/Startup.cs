@@ -9,7 +9,7 @@ namespace WebApp
         {
             app.Use((context, next) =>
             {
-                return context.Response.WriteAsync(Constants.Feature1);
+                return context.Response.WriteAsync($"{Constants.Feature1}<br/>{Constants.Feature2}");
             });
         }
     }
